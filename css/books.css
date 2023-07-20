@@ -1,0 +1,134 @@
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/VNI-Viet\ tay.ttf);
+}
+
+header {
+    background: linear-gradient(blue, white);
+}
+
+.subject {
+    font-family: myfont;
+}
+
+.flex {
+    display: flex;
+    
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-img {
+    width: 120px;
+}
+
+.icon {
+    width: 1rem;
+}
+
+.ads > div {
+    border: 1.5px dashed darkblue;
+    padding: 2.5rem 0.2rem;
+    margin: 0.1rem;
+}
+
+input[type=text] {
+    padding: 0.2rem;
+}
+
+/* MENU */
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: bisque;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+
+ul.menu > li > a:hover {
+    background: darkblue;
+    color: white;
+}
+
+/* MAIN */
+.left {
+    width: 20%;
+}
+
+.right {
+    width: 80%;
+}
+
+.v-menu {
+    flex-direction: column;
+}
+
+.v-menu > li {
+    width: 100%;
+}
+
+.v-menu > li > a {
+    background: linear-gradient(lightblue, white);
+}
+
+.books {
+    flex-wrap: wrap;
+}
+
+.book {
+    width: 20%;
+    text-align: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.book img {
+    width: 100%;
+}
+
+.book:hover .des {
+    cursor: all-scroll;
+    bottom: 0;
+}
+
+.des {
+    background-color: rgb(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    overflow: hidden;
+    transition: bottom 1s;
+}
+
+.social {
+    position: fixed;
+    background-color: blue;
+    right: 0;
+    top: 80px;
+    padding: 0;
+}
+
+.social > li {
+    margin-right: -100px;
+    transition: margin-right 1s;
+}
+
+.social > li:hover {
+    margin-right: 0;
+}
+
+.social a {
+    color: white;
+}
